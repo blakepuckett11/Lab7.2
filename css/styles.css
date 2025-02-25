@@ -1,0 +1,80 @@
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.logo {
+  font-size: 200%;
+  padding: 50px 20px;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+/* Creates a 2 column grid that centers the elements */
+.grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start; 
+  max-width: 980px; 
+  margin: 0 auto; 
+}
+
+nav {
+  background-color: #000;
+  padding: 0.5em;
+  /* Keep nav at the top when scrolling */
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+/* Center Nav Items Horizonta */
+nav ul {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+/* Equal Space */
+nav ul li {
+  flex-grow: 1;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: .5em 1em;
+}
+
+.photos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Wrap text around the intial image */
+.feature {
+    width: 200px;
+    float: left;
+    padding: 15px;
+    margin-right: 15px
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 1px;
+  padding: 10px;
+}
+
